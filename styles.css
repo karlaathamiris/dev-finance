@@ -1,0 +1,63 @@
+/*:root- seletor que vai selecionar a raiz do arquivo html*/
+:root {
+    --dark-blue:#363f5f;
+}
+/*seletoruniversal*/
+ *{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: auto; /*corresponde ás laterais*/
+    width: min(90vw, 800px); /*função min recebe dois atributos e a partir deles, valores, sempre prevalecendo o maior*/
+
+}
+
+h2 {
+    color:var(--dark-blue); /*var(nome do atributo) é uma função que acessa o seletor que foi passado globalmente, no caso é o :root*/
+    font-weight: normal;
+    margin-bottom: 0.8rem;
+    margin-top: 3.2rem;
+}
+
+header {
+    background-color: #2D4A22;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+#balance {
+    margin-top: -5rem;
+}
+
+#balance h2 {
+    color:#fff;
+    margin-top: 0;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+}
