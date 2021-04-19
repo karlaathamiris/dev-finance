@@ -3,10 +3,14 @@
     --dark-blue:#363f5f;
 }
 /*seletoruniversal*/
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 97.75%;  /*15 pixels*/
 }
 
 body {
@@ -100,6 +104,12 @@ header {
     color:#fff;
 }
 
+#transaction {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
 #data-table {
     color: #969cb3;
     width: 100%;
@@ -153,4 +163,16 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.89;
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
